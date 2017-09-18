@@ -97,6 +97,9 @@ a{
 a:hover{
 	color: inherit;
 }
+.pbuttons{
+	text-decoration: none;
+}
 /*@media only screen and (max-width: 1026px) {
 
 }*/
