@@ -1,0 +1,124 @@
+html{
+	height: 100%;
+}
+body {
+	height: 100%;
+	color: white;
+}
+.fit{
+	min-height: 100%;
+}
+.intro{
+	background: #000000; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#000000, #1a1a1a, #000000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#000000, #1a1a1a, #000000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#000000, #1a1a1a, #000000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#000000, #1a1a1a, #000000); /* Standard syntax */
+}
+.name{
+	font-family: 'Passion One', cursive;
+	font-size: 75px;
+	padding-top: 20vh;
+	text-shadow: 3px 2px 0 #444;
+}
+.links{
+	padding-top: 20vh;
+}
+.port-links{
+	padding-top: 15px;
+	font-size: 30px;
+}
+.port-links:hover{
+	text-shadow: 3px 2px 0 #444;
+	-webkit-animation: bounce 1.5s;
+    animation: bounce 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.about-me{
+	background: #000000; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#000000, #0066ff, #000000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#000000, #0066ff, #000000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#000000, #0066ff, #000000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#000000, #0066ff, #000000); /* Standard syntax */
+}
+#about-me-heading{
+	font-size: 40px;
+	padding: 20px;
+	text-shadow: 3px 2px 0 #000;
+}
+#about-me-connect{
+	font-size: 30px;
+	padding: 20px;
+	text-shadow: 3px 2px 0 #000;
+}
+#about-me-text{
+	font-size: 20px;
+	padding: 15px;
+}
+.main-about{
+	padding-top: 10%;
+}
+.portfolio{
+	background: #000000; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#000000, #808080, #000000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#000000, #808080, #000000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#000000, #808080, #000000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#000000, #808080, #000000); /* Standard syntax */
+}
+.pR-heading{
+	font-size:40px;
+	padding: 20px;
+	text-shadow: 3px 2px 0 #000;
+}
+.port{
+	padding: 5px;
+	position: relative;
+}
+.resume{
+	background: #000000; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#000000, #33cc33, #000000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#000000, #33cc33, #000000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#000000, #33cc33, #000000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#000000, #33cc33, #000000); /* Standard syntax */
+}
+.card-style{
+	background-color: transparent;
+	border: 2px solid black;
+}
+.resume-text{
+	font-size: 22px;
+	margin-top: 5%
+}
+a{
+	color: inherit;
+}
+a:hover{
+	color: inherit;
+}
+/*@media only screen and (max-width: 1026px) {
+
+}*/
+@media only screen and (max-width: 767px) {
+    .name{
+    	font-size: 40px;
+    }
+    .links{
+    	padding-top: 10vh;
+    }
+    .port-links{
+    	font-size: 20px;
+    }
+    #about-me-heading{
+    	text-align: center;
+    }
+    .about-image{
+		width:200px;
+    }
+    #about-me-text{
+    	padding: 0px;
+    }
+    .resume-text{
+    	font-size: 16px
+    }
+}
