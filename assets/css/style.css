@@ -92,6 +92,7 @@ body {
 }
 a{
 	color: inherit;
+	text-decoration: underline;
 }
 a:hover{
 	color: inherit;
