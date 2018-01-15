@@ -1,10 +1,4 @@
 $(document).ready(function(){
-	$(".port-links").bind("mouseenter", function(e){
-		$(this).removeClass("slideInLeft slideInUp slideInRight").addClass("bounce");
-	});
-	$(".port-links").bind("mouseleave", function(e){
-		$(this).removeClass("bounce");
-	});
 	// Smooth Scroll
 	$(".smooth-scroll").click(function() {
 	  if ( location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname  ) {
@@ -16,5 +10,10 @@ $(document).ready(function(){
 	      $("html,body").animate( { scrollTop: pos },  800 ); return false;
 	    }
 	  }
+	});
+	// For mobile on clicking navigation link it collapses menu
+	$(".nav-link").click(function(){
+		console.log("H")
+		$(".navbar-collapse").removeClass("show")
 	});
 });

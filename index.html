@@ -5,8 +5,8 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
-	integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
 
 	<!-- animate.css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -22,7 +22,8 @@
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
 
 
@@ -33,26 +34,33 @@
 
 </head>
 <body>
-<div class="container-fluid fit intro">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+				  <a class="navbar-brand smooth-scroll" href="#intro">Andres Vadovinos</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				    <div class="navbar-nav ml-auto">
+				      <a class="nav-link smooth-scroll active" href="#about_me">About Me</a>
+				      <a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a>
+				      <a class="nav-link smooth-scroll" href="#resume">Resume</a>
+				      <a class="nav-link smooth-scroll" href="#contact">Contact</a>
+				    </div>
+				  </div>
+</nav>
+<div class="container fit intro" id="intro">
  	<div class="row name">
- 		<div class="col text-center animated fadeIn">Andres Valdovinos</div>
+ 		<div class="col text-center animated fadeIn">Welcome to my Digital Profile!</div>
  	</div>
- 	<div class="row links">
- 		<div class="col-md-4 co-sm-12 text-center"><p class = "port-links animated slideInLeft center-block"> 
- 			<a href="#about_me" class = "smooth-scroll">About Me</a> 
- 		</p></div>
- 		<div class="col-md-4 col-sm-12 text-center"><p class = "port-links animated slideInUp center-block">
- 		<a href="#portfolio" class = "smooth-scroll">Portfolio</a>
- 		</p></div>
- 		<div class="col-md-4 col-sm-12 text-center"><p class = "port-links animated slideInRight center-block">
- 			<a href="#resume" class = "smooth-scroll">Resume</a>
- 		</p></div>
+ 	<div class="row welcome justify-content-center">
+ 		<div class="col-md-7 text-center animated slideInUp">
+ 			 		<p> Hopefully here you will find all you need to know about me. <br> This webpage will let you get to know more about me, if you still have questions feel free to contact me. </p>
+ 		</div>
  	</div>
 </div>
-<div class="container-fluid fit about-me" id = "about_me">
+<div class="container about-me" id = "about_me">
 	<div class="row main-about">
-		<div class="col-lg-2">	</div>
-		<div class="col-sm-12 col-lg-6 animated" >
+		<div class="col-sm-12 animated" >
 			<div class="row">
 				<div class = "col-sm-12 text-center" data-aos="ease in" id = "about-me-heading">About Me</div>
 			</div>
@@ -65,26 +73,16 @@
 								</div>
 							</div>
 							<div class="col-sm-12 col-lg-8">
-								<p id = "about-me-text"> My passion in programming lies in the logic. Therefore I prefer to work with scripting languages and backend work. In pursuit to expand my skills in programming, I enrolled in a bootcamp hosted at UCI while working full time. At the bootcamp I learned the fundamentals of Full Stack Development. I've done many individual and group projects which can be viewed <a href="#portfolio" class = "smooth-scroll">here.</a>
+								<p id = "about-me-text"> "There are no secrets to success. It is the result of preparation, hard work, and learning from failure." <br> This quote has defined my viewpoint when taking on a challenge. When I began my pursuit of becoming a softwar developer coming from a math background I knew my road would not be easy. In order to succeed in this field I needed to take necessary steps to prepare myself, so I enrolled into a Full Stack Web Development Bootcamp while working as a Full Time employee. For 6 months I discovered the diverse field that is software development and through hours of time spent in projects I know this is what I want to do. I am not afraid of what I do not know because through hard work I will be able to learn it. <br> I've done many individual and group projects which can be viewed <a href="#portfolio" class = "smooth-scroll">here.</a> <!-- My passion in programming lies in the logic. Therefore I prefer to work with scripting languages and backend work. In pursuit to expand my skills in programming, I enrolled in a bootcamp hosted at UCI while working full time. At the bootcamp I learned the fundamentals of Full Stack Development.</a> -->
 								</p>
 							</div>
 						</div>
 					</div>
 			</div>
 		</div>
-		<div class="col-sm-12 col-lg-offset-1 col-lg-3">
-			<div class="row">
-				<div class="col-sm-12 text-center animated" id="about-me-connect">Connect With Me</div>
-			</div>
-			<div class="row">
-				<div class="col"><img class="center-block" src="assets/images/githubicon.png"></div>
-				<div class="col"><img class = "center-block" src="assets/images/linkedin.png"></div>
-				<div class="col"><img class = "center-block" src="assets/images/stackoverflow.png"></div>
-			</div>
-		</div>
 	</div>
 </div>
-<div class="container-fluid fit portfolio" id = "portfolio">
+<div class="container portfolio" id = "portfolio">
 	<div class="row"><div class = "text-center col pR-heading">Portfolio</div></div>
 	<div class="row">
 	<div class="col-xl-4 col-md-6">
@@ -170,19 +168,23 @@
 		</div>
 	</div>
 </div>
-<div class="container-fluid fit resume" id = "resume">
+<div class="container resume" id = "resume">
 	<div class="row"><div class = "text-center col pR-heading">Resume</div></div>
 	<div class="row">
-		<div class="card border-dark col-lg-6 mx-auto card-style resume-text">
-			<div class="card-body">
-				<p>
-					I have a Bachelor's degree in Mathematics with a minor in Computer Science from University of California Irvine. I studied data structures and complexity of algortithms during my time in college. I have experience with multiple programming languages: Javascript/JQuery, Node JS, MySQL, Python, C++, Java. I currently work at a software company using agile/scrum methodology.
-				</p>
-				<br>
-				<p>To download my resume click <a href="./assets/files/Resume.docx" download>here.</a></p>
+				<div class="col text-center" style = "font-size: 18px">To download my resume click <a href="./assets/files/Resume.docx" download>here.</a></div>
+	</div>
+</div>
+<div class="container connect" id="contact">	
+		<div class="col-sm-12">
+			<div class="row">
+				<div class="col-sm-12 text-center animated" id="about-me-connect">Connect With Me</div>
+			</div>
+			<div class="row">
+				<div class="col"><a href="https://github.com/ThatOneAndres" target="_blank"><img class="center-block" src="assets/images/githubicon.png"></a></div>
+				<div class="col"><a href="https://www.linkedin.com/in/andres-valdovinos/" target="_blank"><img class = "center-block" src="assets/images/linkedin.png"></a></div>
+				<div class="col"><p id = "email"> Email: valdovinosandres@ymail.com </p></div>
 			</div>
 		</div>
-	</div>
 </div>
 
 
